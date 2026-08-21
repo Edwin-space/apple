@@ -26,33 +26,45 @@ for (const [slug, label] of categories) {
     .filter((article) => article.category === slug)
     .sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt)));
 
-  const indexLines = [`# ${label}`, '', `${label} 관련 업데이트를 날짜순으로 정리합니다.`, ''];
+  const grouped = new Map();
+  for (const article of articles) {
+    const product = article.product || article.categoryLabel || label;
+    const list = grouped.get(product) ?? [];
+    list.push(article);
+    grouped.set(product, list);
+  }
+
+  const indexLines = [`# ${label}`, '', `${label} 관련 업데이트를 제품과 OS별로 정리합니다.`, ''];
   summary.push(`* [${label}](${slug}/README.md)`);
 
-  for (const article of articles) {
-    const fileName = `${article.slug}.md`;
-    indexLines.push(`- [${article.title}](${fileName}) — ${article.publishedAt ?? ''}`);
-    summary.push(`  * [${article.title}](${slug}/${fileName})`);
+  for (const [product, productArticles] of grouped) {
+    indexLines.push(`## ${product}`, '');
+    for (const article of productArticles) {
+      const fileName = `${article.slug}.md`;
+      indexLines.push(`- [${article.title}](${fileName}) — ${article.publishedAt ?? ''}`);
+      summary.push(`  * [${article.title}](${slug}/${fileName})`);
 
-    const page = [
-      `# ${article.title}`,
-      '',
-      `**${article.categoryLabel ?? label} · ${article.publishedAt ?? ''}**`,
-      '',
-      ...(article.image?.url ? [`![${article.title}](${article.image.url})`, '', `_${article.image.credit ?? '이미지: Apple'}_`, ''] : []),
-      article.summary ?? '',
-      '',
-      '## 핵심 변화',
-      '',
-      ...((article.highlights?.length ? article.highlights : ['세부 변화는 검토 후 보강됩니다.']).map((item) => `- ${item}`)),
-      '',
-      '## 왜 중요한가',
-      '',
-      article.whyItMatters || '제품 및 플랫폼 변화의 맥락을 검토 중입니다.',
-      '',
-    ].join('\n');
+      const page = [
+        `# ${article.title}`,
+        '',
+        `**${product} · ${article.publishedAt ?? ''}**`,
+        '',
+        ...(article.image?.url ? [`![${article.title}](${article.image.url})`, '', `_${article.image.credit ?? '이미지: Apple'}_`, ''] : []),
+        article.summary ?? '',
+        '',
+        '## 핵심 변화',
+        '',
+        ...((article.highlights?.length ? article.highlights : ['세부 변화는 검토 후 보강됩니다.']).map((item) => `- ${item}`)),
+        '',
+        '## 왜 중요한가',
+        '',
+        article.whyItMatters || '제품 및 플랫폼 변화의 맥락을 검토 중입니다.',
+        '',
+      ].join('\n');
 
-    await fs.writeFile(path.join(categoryDir, fileName), page);
+      await fs.writeFile(path.join(categoryDir, fileName), page);
+    }
+    indexLines.push('');
   }
 
   if (articles.length === 0) indexLines.push('아직 등록된 업데이트가 없습니다.');
