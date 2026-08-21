@@ -1,0 +1,63 @@
+name: Apple archive backfill
+
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: 'Earliest article date (YYYY-MM-DD)'
+        required: false
+        default: '2025-01-01'
+      pages:
+        description: 'Guide pages per category'
+        required: false
+        default: '5'
+      categories:
+        description: 'Comma-separated categories'
+        required: false
+        default: 'iphone,mac,ipad,apple-watch'
+  schedule:
+    - cron: '20 22 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Import 9to5Mac category archives
+        env:
+          INPUT_SINCE: ${{ github.event.inputs.since }}
+          INPUT_PAGES: ${{ github.event.inputs.pages }}
+          INPUT_CATEGORIES: ${{ github.event.inputs.categories }}
+        run: |
+          SINCE="${INPUT_SINCE:-2026-01-01}"
+          PAGES="${INPUT_PAGES:-3}"
+          CATEGORIES="${INPUT_CATEGORIES:-iphone,mac,ipad,apple-watch}"
+          npm run import:feeds -- --since="$SINCE" --pages="$PAGES" --categories="$CATEGORIES"
+
+      - name: Generate GitBook pages
+        run: npm run generate:gitbook
+
+      - name: Commit updated archive
+        shell: bash
+        run: |
+          if git diff --quiet -- data/articles.json docs; then
+            echo "No archive changes"
+            exit 0
+          fi
+          git config user.name "apple-archive-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/articles.json docs
+          git commit -m "content: update Apple archive"
+          git push
