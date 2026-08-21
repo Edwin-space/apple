@@ -1,6 +1,16 @@
 import data from '@/data/articles.json';
 
-export type Article = (typeof data.articles)[number];
+type RawArticle = (typeof data.articles)[number];
+
+export type Article = RawArticle & {
+  product?: string;
+  status?: 'rumor' | 'reported' | 'confirmed' | string;
+  image?: {
+    url: string;
+    credit: string;
+    source?: string;
+  } | null;
+};
 
 export const categories = [
   { slug: 'iphone', label: 'iPhone' },
