@@ -2,7 +2,7 @@
 
 **Mac · 2026-08-19**
 
-![macOS 27 Siri 관련 이미지](https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Air-M5-hero_inline.jpg.large.jpg)
+![macOS 27, Mac 최초의 독립형 Siri 앱 추가](https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Air-M5-hero_inline.jpg.large.jpg)
 
 _이미지: Apple_
 

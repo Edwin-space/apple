@@ -2,7 +2,7 @@
 
 **iPhone · 2026-08-19**
 
-![iPhone 18 Pro 관련 이미지](https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-17-hero-250909_inline.jpg.large.jpg)
+![iPhone 18 Pro, 후면 색상 통일과 더 작은 Dynamic Island 전망](https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-17-hero-250909_inline.jpg.large.jpg)
 
 _이미지: Apple_
 
