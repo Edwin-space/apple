@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/import-feeds.mjs'
+      - 'scripts/enrich-articles.mjs'
       - '.github/workflows/backfill-apple.yml'
   workflow_dispatch:
     inputs:
@@ -25,6 +26,7 @@ on:
 
 permissions:
   contents: write
+  models: read
 
 concurrency:
   group: apple-archive-backfill
@@ -33,7 +35,7 @@ concurrency:
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -56,6 +58,12 @@ jobs:
           CATEGORIES="${INPUT_CATEGORIES:-iphone,mac,ipad,apple-watch}"
           npm run import:feeds -- --since="$SINCE" --pages="$PAGES" --categories="$CATEGORIES"
 
+      - name: Enrich article content and images
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_MODELS_MODEL: openai/gpt-4o
+        run: npm run enrich:articles
+
       - name: Generate GitBook pages
         run: npm run generate:gitbook
 
@@ -69,5 +77,5 @@ jobs:
           git config user.name "apple-archive-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- data/articles.json docs
-          git commit -m "content: update Apple archive from RSS"
+          git commit -m "content: enrich Apple archive"
           git push
