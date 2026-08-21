@@ -1,0 +1,50 @@
+{
+  "articles": [
+    {
+      "slug": "macos-27-standalone-siri-app",
+      "category": "mac",
+      "categoryLabel": "Mac",
+      "publishedAt": "2026-08-19",
+      "title": "macOS 27, Mac 최초의 독립형 Siri 앱 추가",
+      "summary": "macOS 27에서 Siri가 독립 앱으로 분리되고, 이전 대화 기록과 기기 간 대화 동기화를 지원하는 방향이 확인됐다.",
+      "highlights": [
+        "Dock에서 Siri 앱을 직접 실행할 수 있다.",
+        "이전 Siri 대화를 목록 또는 카드 형태로 다시 확인할 수 있다.",
+        "대화 기록은 iCloud를 통해 Apple 기기 간 이어질 수 있다."
+      ],
+      "whyItMatters": "Siri가 일회성 음성 명령 도구에서 지속적인 개인 AI 세션으로 이동하는 변화다.",
+      "image": {
+        "url": "https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Air-M5-hero_inline.jpg.large.jpg",
+        "credit": "이미지: Apple"
+      },
+      "provenance": {
+        "source": "9to5Mac",
+        "sourceUrl": "https://9to5mac.com/2026/08/19/macos-27-new-siri-app-features/",
+        "visible": false
+      }
+    },
+    {
+      "slug": "iphone-18-pro-design-updates",
+      "category": "iphone",
+      "categoryLabel": "iPhone",
+      "publishedAt": "2026-08-19",
+      "title": "iPhone 18 Pro, 후면 색상 통일과 더 작은 Dynamic Island 전망",
+      "summary": "iPhone 18 Pro는 후면 유리와 프레임의 색 차이를 줄이고 전면 센서 영역을 다듬는 디자인 정제 세대가 될 가능성이 제기됐다.",
+      "highlights": [
+        "후면 유리와 알루미늄 프레임의 색상 차이가 줄어들 가능성이 있다.",
+        "Dynamic Island가 더 작아질 가능성이 거론된다.",
+        "신규 색상 후보가 함께 거론되고 있으나 일부 정보는 상충한다."
+      ],
+      "whyItMatters": "내부 사양뿐 아니라 전면 센서와 후면 재질 표현을 동시에 정리하는 디자인 변화가 될 수 있다.",
+      "image": {
+        "url": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-17-hero-250909_inline.jpg.large.jpg",
+        "credit": "이미지: Apple"
+      },
+      "provenance": {
+        "source": "9to5Mac",
+        "sourceUrl": "https://9to5mac.com/2026/08/19/iphone-18-pro-three-new-design-updates-are-coming-this-year/",
+        "visible": false
+      }
+    }
+  ]
+}
