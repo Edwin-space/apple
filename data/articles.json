@@ -8,21 +8,11 @@
       "publishedAt": "2026-08-19",
       "title": "macOS 27, Mac 최초의 독립형 Siri 앱 추가",
       "summary": "macOS 27에서 Siri가 독립 앱으로 분리되고, 이전 대화 기록과 기기 간 대화 동기화를 지원하는 방향이 확인됐다.",
-      "highlights": [
-        "Dock에서 Siri 앱을 직접 실행할 수 있다.",
-        "이전 Siri 대화를 목록 또는 카드 형태로 다시 확인할 수 있다.",
-        "대화 기록은 iCloud를 통해 Apple 기기 간 이어질 수 있다."
-      ],
+      "highlights": ["Dock에서 Siri 앱을 직접 실행할 수 있다.", "이전 Siri 대화를 목록 또는 카드 형태로 다시 확인할 수 있다.", "대화 기록은 iCloud를 통해 Apple 기기 간 이어질 수 있다."],
       "whyItMatters": "Siri가 일회성 음성 명령 도구에서 지속적인 개인 AI 세션으로 이동하는 변화다.",
-      "image": {
-        "url": "https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Air-M5-hero_inline.jpg.large.jpg",
-        "credit": "이미지: Apple"
-      },
-      "provenance": {
-        "source": "9to5Mac",
-        "sourceUrl": "https://9to5mac.com/2026/08/19/macos-27-new-siri-app-features/",
-        "visible": false
-      }
+      "status": "reported",
+      "image": {"url": "https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Air-M5-hero_inline.jpg.large.jpg", "credit": "이미지: Apple"},
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/19/macos-27-new-siri-app-features/", "visible": false}
     },
     {
       "slug": "iphone-18-pro-design-updates",
@@ -32,21 +22,123 @@
       "publishedAt": "2026-08-19",
       "title": "iPhone 18 Pro, 후면 색상 통일과 더 작은 Dynamic Island 전망",
       "summary": "iPhone 18 Pro는 후면 유리와 프레임의 색 차이를 줄이고 전면 센서 영역을 다듬는 디자인 정제 세대가 될 가능성이 제기됐다.",
-      "highlights": [
-        "후면 유리와 알루미늄 프레임의 색상 차이가 줄어들 가능성이 있다.",
-        "Dynamic Island가 더 작아질 가능성이 거론된다.",
-        "신규 색상 후보가 함께 거론되고 있으나 일부 정보는 상충한다."
-      ],
+      "highlights": ["후면 유리와 알루미늄 프레임의 색상 차이가 줄어들 가능성이 있다.", "Dynamic Island가 더 작아질 가능성이 거론된다.", "신규 색상 후보가 함께 거론되고 있으나 일부 정보는 상충한다."],
       "whyItMatters": "내부 사양뿐 아니라 전면 센서와 후면 재질 표현을 동시에 정리하는 디자인 변화가 될 수 있다.",
-      "image": {
-        "url": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-17-hero-250909_inline.jpg.large.jpg",
-        "credit": "이미지: Apple"
-      },
-      "provenance": {
-        "source": "9to5Mac",
-        "sourceUrl": "https://9to5mac.com/2026/08/19/iphone-18-pro-three-new-design-updates-are-coming-this-year/",
-        "visible": false
-      }
+      "status": "rumor",
+      "image": {"url": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-17-hero-250909_inline.jpg.large.jpg", "credit": "이미지: Apple"},
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/19/iphone-18-pro-three-new-design-updates-are-coming-this-year/", "visible": false}
+    },
+    {
+      "slug": "apple-watch-series-12-ceramic-return",
+      "category": "apple-watch",
+      "categoryLabel": "Apple Watch",
+      "product": "Apple Watch Series 12",
+      "publishedAt": "2026-08-19",
+      "title": "Apple Watch Series 12, 세라믹 케이스 복귀 가능성",
+      "summary": "Series 5 이후 사라졌던 세라믹 소재가 Series 12에서 다시 등장할 수 있다는 전망이 나왔다.",
+      "highlights": ["세라믹 케이스 옵션 복귀 가능성이 제기됐다.", "과거 Apple Watch Edition에서 사용된 프리미엄 소재다.", "가격과 최종 디자인은 아직 확인되지 않았다."],
+      "whyItMatters": "Ultra와 다른 방향의 프리미엄 라인업을 다시 만들 수 있다는 점에서 제품 포지셔닝 변화로 볼 수 있다.",
+      "status": "rumor",
+      "image": null,
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/19/apple-watch-series-12-to-bring-back-beloved-design-material-says-leaker/", "visible": false}
+    },
+    {
+      "slug": "iphone-18-pro-max-camera-differentiation",
+      "category": "iphone",
+      "categoryLabel": "iPhone",
+      "product": "iPhone 18 Pro Max",
+      "publishedAt": "2026-08-18",
+      "title": "iPhone 18 Pro Max, 카메라 차별화 확대 가능성",
+      "summary": "Pro Max에 6배 광학 줌과 더 복잡한 프리즘 구조, 가변 조리개가 독점 적용될 수 있다는 루머가 제기됐다.",
+      "highlights": ["6배 광학 줌 가능성이 거론된다.", "더 고도화된 다중 반사 프리즘 구조가 언급됐다.", "가변 조리개 독점 여부는 다른 보도와 엇갈린다."],
+      "whyItMatters": "Apple이 다시 화면 크기뿐 아니라 카메라 사양으로 Pro와 Pro Max를 구분할 가능성을 보여준다.",
+      "status": "rumor",
+      "image": {"url": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-17-hero-250909_inline.jpg.large.jpg", "credit": "이미지: Apple"},
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/18/two-camera-features-may-be-unique-to-the-iphone-18-pro-max-suggests-leaker/", "visible": false}
+    },
+    {
+      "slug": "ios-27-calendar-smart-event-details",
+      "category": "iphone",
+      "categoryLabel": "iPhone",
+      "product": "iOS 27",
+      "publishedAt": "2026-08-18",
+      "title": "iOS 27 Calendar, 자연어 일정 생성과 Busy/Free 추가",
+      "summary": "Calendar가 Apple Intelligence 기반 자연어 일정 입력을 지원하고 iCloud 일정에 Busy/Free 상태를 추가하는 방향으로 확장됐다.",
+      "highlights": ["자연어로 일정 내용을 입력하면 제목·시간·장소·초대 대상을 자동 구성한다.", "iCloud Calendar 일정별 Busy/Free 상태가 추가됐다.", "일정 생성·편집 화면도 카드 중심으로 재설계됐다."],
+      "whyItMatters": "캘린더가 단순 입력 도구에서 AI가 구조화 작업을 대신하는 생산성 인터페이스로 바뀌는 변화다.",
+      "status": "reported",
+      "image": null,
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/18/heres-everything-new-for-apple-calendar-in-ios-27/", "visible": false}
+    },
+    {
+      "slug": "safari-26-6-1-webkit-security",
+      "category": "mac",
+      "categoryLabel": "Mac",
+      "product": "Safari 26",
+      "publishedAt": "2026-08-18",
+      "title": "Safari 26.6.1, Sonoma·Sequoia에서 WebKit 취약점 22개 수정",
+      "summary": "Safari 26.6.1이 macOS Sonoma와 Sequoia에서 다수의 WebKit 취약점을 수정했다.",
+      "highlights": ["22개의 WebKit CVE가 수정됐다.", "악성 웹 콘텐츠로 인한 메모리 손상 문제도 포함됐다.", "구형 macOS를 유지하는 사용자도 Safari 업데이트가 필요하다."],
+      "whyItMatters": "OS 전체 업그레이드 없이도 브라우저 공격 표면을 크게 줄일 수 있는 중요한 보안 업데이트다.",
+      "status": "reported",
+      "image": {"url": "https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Air-M5-hero_inline.jpg.large.jpg", "credit": "이미지: Apple"},
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/18/safari-26-6-1-patches-multiple-webkit-security-flaws-on-macos-sonoma-and-sequoia/", "visible": false}
+    },
+    {
+      "slug": "iphone-ultra-supply-timing",
+      "category": "iphone",
+      "categoryLabel": "iPhone",
+      "product": "iPhone Ultra",
+      "publishedAt": "2026-08-17",
+      "title": "iPhone Ultra, 초기 공급 제약 가능성",
+      "summary": "폴더블 형태로 예상되는 iPhone Ultra가 9월 공개를 유지하더라도 초기 물량은 매우 제한적일 수 있다는 전망이 나왔다.",
+      "highlights": ["9월 출시 일정 자체는 유지될 가능성이 제기됐다.", "초기 공급은 매우 제한적일 수 있다.", "충분한 출하량 확보까지 수개월이 필요할 수 있다는 관측이 있다."],
+      "whyItMatters": "출시 지역보다 생산 수율과 공급 안정성이 실제 시장 확대 속도를 결정할 수 있다.",
+      "status": "rumor",
+      "image": {"url": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-17-hero-250909_inline.jpg.large.jpg", "credit": "이미지: Apple"},
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/17/new-iphone-ultra-leaks-cover-release-timing-availability-and-name/", "visible": false}
+    },
+    {
+      "slug": "a20-pro-performance-efficiency-rumor",
+      "category": "iphone",
+      "categoryLabel": "iPhone",
+      "product": "A20 Pro",
+      "publishedAt": "2026-08-17",
+      "title": "A20 Pro, 성능·효율 향상과 2nm 전환 전망",
+      "summary": "A20 Pro가 A19 Pro 대비 성능과 전력 효율을 개선하고 TSMC 2nm 공정을 사용할 수 있다는 공급망 루머가 나왔다.",
+      "highlights": ["성능 약 18% 향상 전망이 제기됐다.", "전력 효율 약 30% 개선 가능성이 언급됐다.", "2nm 공정과 새로운 패키징 방식 가능성이 거론된다."],
+      "whyItMatters": "2nm 전환이 현실화되면 Apple Silicon의 세대 교체가 단순 클럭 상승보다 공정·패키징 중심으로 이동할 수 있다.",
+      "status": "rumor",
+      "image": {"url": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-17-hero-250909_inline.jpg.large.jpg", "credit": "이미지: Apple"},
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/17/leaker-details-a20-pro-chips-new-speed-gains/", "visible": false}
+    },
+    {
+      "slug": "ios-26-6-1-security-fixes",
+      "category": "iphone",
+      "categoryLabel": "iPhone",
+      "product": "iOS 26",
+      "publishedAt": "2026-08-17",
+      "title": "iOS 26.6.1, 20개 이상 보안 취약점 수정",
+      "summary": "iOS 26.6.1은 WebKit을 포함해 Audio, ImageIO, Kernel 등 여러 영역의 보안 취약점을 수정했다.",
+      "highlights": ["20개가 넘는 보안 수정이 포함됐다.", "WebKit 관련 취약점이 다수 포함됐다.", "Audio·ImageIO·Kernel 계층의 문제도 함께 수정됐다."],
+      "whyItMatters": "사용자 체감 기능보다 공격 표면을 줄이는 유지보수 업데이트라는 점에서 즉시 적용 가치가 높다.",
+      "status": "reported",
+      "image": null,
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/17/ios-26-6-1-has-fixes-for-20-security-issues-on-iphone-details-here/", "visible": false}
+    },
+    {
+      "slug": "mac-screen-sharing-exploited-vulnerability",
+      "category": "mac",
+      "categoryLabel": "Mac",
+      "product": "macOS",
+      "publishedAt": "2026-08-17",
+      "title": "Mac 화면 공유 취약점, 실제 공격에 악용 확인",
+      "summary": "macOS Screen Sharing 인증 취약점이 실제 공격에 악용된 정황이 확인됐고, 같은 네트워크의 공격자가 인증을 우회할 수 있는 위험이 보고됐다.",
+      "highlights": ["실제 악용 사례가 확인됐다.", "동일 네트워크 공격자가 인증을 우회할 수 있다.", "업데이트 적용 또는 미사용 시 Screen Sharing 비활성화가 권장된다."],
+      "whyItMatters": "단순 이론 취약점이 아니라 실제 공격에 사용된 문제라는 점에서 기업과 개인 모두 우선 대응 대상이다.",
+      "status": "reported",
+      "image": {"url": "https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Air-M5-hero_inline.jpg.large.jpg", "credit": "이미지: Apple"},
+      "provenance": {"source": "9to5Mac", "sourceUrl": "https://9to5mac.com/2026/08/17/a-serious-mac-screen-sharing-vulnerability-is-being-actively-exploited/", "visible": false}
     }
   ]
 }
